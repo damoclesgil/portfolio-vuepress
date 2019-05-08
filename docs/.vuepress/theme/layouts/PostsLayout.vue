@@ -31,9 +31,8 @@
 </template>
 
 <script>
-import moment from 'moment';
 export default {
-  name: 'Layout',
+  name: 'PostsLayout',
   computed: {
     posts() {
       return this.$site.pages

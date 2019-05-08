@@ -31,14 +31,14 @@
 <script>
 import Vue from 'vue';
 import nprogress from 'nprogress';
-import Home from './Home.vue';
+import Home from './layouts/Home.vue';
 import Navbar from './Navbar.vue';
-import About from './About.vue';
-import Page from './Page.vue';
+import About from './layouts/About.vue';
+import Page from './layouts/Page.vue';
 import Sidebar from './Sidebar.vue';
 import SWUpdatePopup from './SWUpdatePopup.vue';
 import { resolveSidebarItems } from './util';
-import Work from './Work.vue';
+import Work from './layouts/Work.vue';
 
 export default {
   components: { Home, Page, Sidebar, Navbar, SWUpdatePopup, Work, About },

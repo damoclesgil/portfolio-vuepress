@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import NavLink from './NavLink.vue';
+import NavLink from './../NavLink.vue';
 
 export default {
   components: { NavLink },
@@ -150,6 +150,10 @@ export default {
 
 .magento {
   background: lighten(#f26322, 30%);
+}
+
+.laravel {
+  background: lighten(#e34c26, 30%);
 }
 
 .html {

@@ -11,7 +11,7 @@ import Nav from '@theme/components/Nav';
 import Footer from '@theme/components/Footer';
 export default {
   components: { Nav, Footer },
-  name: 'Layout'
+  name: 'Blog'
 };
 </script>
 
