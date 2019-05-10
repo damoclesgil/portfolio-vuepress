@@ -14,10 +14,20 @@ module.exports = {
       description: "Dâmocles Gil Marçal, Desenvolvedor Front-End"
     }
   },
+  serviceWorker: true,
   themeConfig: {
     locales: {
       "/": en,
       "/pt/": pt
+    },
+    logo: "/damoclesgil_logo.svg",
+    blackWhite: true,
+
+    serviceWorker: {
+      updatePopup: {
+        message: "New content 🎉🎉",
+        buttonText: "Update"
+      }
     }
   },
   markdown: {

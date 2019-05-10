@@ -170,7 +170,7 @@ export default {
         top: 11px
         transform: rotate(119deg) skew(-35deg)
         width: 18px
-        top: -2px
+        top: -3px
         right: 25px
         border-radius: 0px 0px 0px 5px
         box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.03)
