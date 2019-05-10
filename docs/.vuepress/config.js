@@ -1,5 +1,6 @@
 const en = require("./config/locales/en");
 const pt = require("./config/locales/pt");
+const head = require("./config/head");
 
 module.exports = {
   locales: {
@@ -14,15 +15,17 @@ module.exports = {
       description: "Dâmocles Gil Marçal, Desenvolvedor Front-End"
     }
   },
-  serviceWorker: true,
   themeConfig: {
     locales: {
       "/": en,
       "/pt/": pt
     },
+    head,
+    serviceWorker: true,
+    ga: "UA-76830249-1",
     logo: "/damoclesgil_logo.svg",
+    repo: "vuejs/vuepress",
     blackWhite: true,
-
     serviceWorker: {
       updatePopup: {
         message: "New content 🎉🎉",
