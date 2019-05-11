@@ -82,7 +82,13 @@ export default {
       if (this.$page.frontmatter.editLink === false) {
         return;
       }
-      const { repo, editLinks, docsDir = '', docsBranch = 'master', docsRepo = repo } = this.$site.themeConfig;
+      const {
+        repo,
+        editLinks,
+        docsDir = '',
+        docsBranch = 'master',
+        docsRepo = repo
+      } = this.$site.themeConfig;
 
       let path = normalize(this.$page.path);
       if (endingSlashRE.test(path)) {
@@ -96,7 +102,11 @@ export default {
     },
 
     editLinkText() {
-      return this.$themeLocaleConfig.editLinkText || this.$site.themeConfig.editLinkText || `Edit this page`;
+      return (
+        this.$themeLocaleConfig.editLinkText ||
+        this.$site.themeConfig.editLinkText ||
+        `Edit this page`
+      );
     }
   },
 
@@ -114,9 +124,16 @@ export default {
         );
       }
 
-      const base = outboundRE.test(docsRepo) ? docsRepo : `https://github.com/${docsRepo}`;
+      const base = outboundRE.test(docsRepo)
+        ? docsRepo
+        : `https://github.com/${docsRepo}`;
 
-      return base.replace(endingSlashRE, '') + `/edit/${docsBranch}` + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') + path;
+      return (
+        base.replace(endingSlashRE, '') +
+        `/edit/${docsBranch}` +
+        (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
+        path
+      );
     }
   }
 };

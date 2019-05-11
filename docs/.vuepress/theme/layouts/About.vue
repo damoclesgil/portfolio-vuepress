@@ -1,5 +1,5 @@
 <template>
-  <div class="custom-layout">
+  <div class="container-layout">
     <h1>{{ data.title }}</h1>
   </div>
 </template>

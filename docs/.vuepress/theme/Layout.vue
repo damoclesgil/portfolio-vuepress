@@ -31,8 +31,10 @@
 <script>
 import Vue from 'vue';
 import nprogress from 'nprogress';
-import Home from './layouts/Home.vue';
 import Navbar from './Navbar.vue';
+import Home from './layouts/Home.vue';
+import Blog from './layouts/Blog.vue';
+import PostLayout from './layouts/PostLayout.vue';
 import About from './layouts/About.vue';
 import Page from './layouts/Page.vue';
 import Sidebar from './Sidebar.vue';
@@ -41,7 +43,17 @@ import { resolveSidebarItems } from './util';
 import Work from './layouts/Work.vue';
 
 export default {
-  components: { Home, Page, Sidebar, Navbar, SWUpdatePopup, Work, About },
+  components: {
+    Home,
+    Page,
+    Sidebar,
+    Navbar,
+    SWUpdatePopup,
+    Work,
+    About,
+    Blog,
+    PostLayout
+  },
 
   data() {
     return {
@@ -57,16 +69,32 @@ export default {
       if (frontmatter.navbar === false || themeConfig.navbar === false) {
         return false;
       }
-      return this.$title || themeConfig.logo || themeConfig.repo || themeConfig.nav || this.$themeLocaleConfig.nav;
+      return (
+        this.$title ||
+        themeConfig.logo ||
+        themeConfig.repo ||
+        themeConfig.nav ||
+        this.$themeLocaleConfig.nav
+      );
     },
 
     shouldShowSidebar() {
       const { frontmatter } = this.$page;
-      return !frontmatter.layout && !frontmatter.home && frontmatter.sidebar !== false && this.sidebarItems.length;
+      return (
+        !frontmatter.layout &&
+        !frontmatter.home &&
+        frontmatter.sidebar !== false &&
+        this.sidebarItems.length
+      );
     },
 
     sidebarItems() {
-      return resolveSidebarItems(this.$page, this.$route, this.$site, this.$localePath);
+      return resolveSidebarItems(
+        this.$page,
+        this.$route,
+        this.$site,
+        this.$localePath
+      );
     },
 
     pageClasses() {
