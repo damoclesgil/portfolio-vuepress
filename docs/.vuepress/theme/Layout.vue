@@ -1,30 +1,28 @@
 <template>
   <div
-    class="theme-container"
-    :class="pageClasses"
+    class="layout-main"
+    :class="{ 'layout-main__nm--opened': nmOpened, 'layout-main__negative': negative }"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
 
-    <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
-
+    <!-- <div class="sidebar-mask" @click="toggleSidebar(false)"></div> -->
+    <!-- 
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
       <slot name="sidebar-top" slot="top"/>
       <slot name="sidebar-bottom" slot="bottom"/>
-    </Sidebar>
+    </Sidebar>-->
 
     <transition-group name="fade" @after-leave="afterLeave">
       <template>
         <component :is="$page.frontmatter.layout" :key="$page.key"/>
-        <!-- <Page v-else :sidebar-items="sidebarItems" :key="$page.key">
-          <slot name="page-top" slot="top"/>
-          <slot name="page-bottom" slot="bottom"/>
-        </Page>-->
       </template>
     </transition-group>
-
+    <BlackWhite v-if="$site.themeConfig.blackWhite" class="header-top__toggle"/>
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
+
+    <div class="footer">{{ $t('footer') }}</div>
   </div>
 </template>
 
@@ -41,6 +39,7 @@ import Sidebar from './Sidebar.vue';
 import SWUpdatePopup from './SWUpdatePopup.vue';
 import { resolveSidebarItems } from './util';
 import Work from './layouts/Work.vue';
+import EventBus from '@theme/plugins/EventBus';
 
 export default {
   components: {
@@ -52,13 +51,17 @@ export default {
     Work,
     About,
     Blog,
-    PostLayout
+    PostLayout,
+    BlackWhite: () =>
+      import(/* webpackChunkName = BlackWhite */ '@theme/components/BlackWhite')
   },
 
   data() {
     return {
       isSidebarOpen: false,
-      swUpdateEvent: null
+      nmOpened: false,
+      swUpdateEvent: null,
+      negative: false
     };
   },
 
@@ -111,6 +114,14 @@ export default {
   },
 
   created() {
+    EventBus.$on('show_nm', data => {
+      this.nmOpened = data;
+    });
+    if (this.$site.themeConfig.blackWhite) {
+      EventBus.$on('toggle_black_white', data => {
+        this.negative = data;
+      });
+    }
     // update existing scrollBehavior in $rooter.options
     let scrollBehavior = (to, from, savedPosition) => {
       return new Promise(resolve => {
@@ -181,7 +192,6 @@ export default {
 };
 </script>
 
-<style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="./styles/theme.styl" lang="stylus"></style>
 
 <style lang="stylus">
@@ -206,6 +216,19 @@ $transitionDelay = 400ms;
 
 .fade-leave-to {
   opacity: 0;
+}
+
+.header-top__toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 35px;
+}
+
+.layout-main__negative {
+  background-color: #000 !important;
+  color: #ccc !important;
+  box-shadow: none !important;
+  fill: #000 !important;
 }
 </style>
 

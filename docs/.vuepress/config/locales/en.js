@@ -1,4 +1,5 @@
 module.exports = {
+  footer: 'english',
   nav: [
     { text: 'Home', link: '/' },
     { text: 'About', link: '/about/' },

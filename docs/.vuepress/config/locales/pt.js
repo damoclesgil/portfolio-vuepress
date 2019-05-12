@@ -1,16 +1,17 @@
 module.exports = {
+  footer: 'pt-BR footer',
   nav: [
-    { text: "Início", link: "/" },
-    { text: "Sobre", link: "/pt/about/" },
+    { text: 'Início', link: '/' },
+    { text: 'Sobre', link: '/pt/about/' },
     {
-      text: "Projetos",
+      text: 'Projetos',
       items: [
-        { text: "Rownan", link: "/pt/work/rownan/" },
-        { text: "Mennace", link: "/pt/work/mennace/" },
-        { text: "Midl", link: "/pt/work/midl/" },
-        { text: "Staash", link: "/pt/work/staash/" },
-        { text: "Bookle", link: "/pt/work/bookle/" }
-      ]
-    }
-  ]
+        { text: 'Rownan', link: '/pt/work/rownan/' },
+        { text: 'Mennace', link: '/pt/work/mennace/' },
+        { text: 'Midl', link: '/pt/work/midl/' },
+        { text: 'Staash', link: '/pt/work/staash/' },
+        { text: 'Bookle', link: '/pt/work/bookle/' },
+      ],
+    },
+  ],
 };

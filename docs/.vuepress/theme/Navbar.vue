@@ -3,9 +3,20 @@
     <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
 
     <router-link :to="$localePath" class="home-link">
-      <img class="logo" v-if="$site.themeConfig.logo" :src="$withBase($site.themeConfig.logo)" :alt="$siteTitle">
-      <span ref="siteName" class="site-name" v-if="$siteTitle" :class="{ 'can-hide': $site.themeConfig.logo }"></span>
+      <img
+        class="logo"
+        v-if="$site.themeConfig.logo"
+        :src="$withBase($site.themeConfig.logo)"
+        :alt="$siteTitle"
+      >
+      <span
+        ref="siteName"
+        class="site-name"
+        v-if="$siteTitle"
+        :class="{ 'can-hide': $site.themeConfig.logo }"
+      ></span>
     </router-link>
+
     <!-- {{ $siteTitle }} -->
     <div class="links" :style="{
         'max-width': linksWrapMaxWidth + 'px'
@@ -24,7 +35,12 @@ import SearchBox from './SearchBox.vue';
 import NavLinks from './NavLinks.vue';
 
 export default {
-  components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
+  components: {
+    SidebarButton,
+    NavLinks,
+    SearchBox,
+    AlgoliaSearchBox
+  },
 
   data() {
     return {
@@ -34,12 +50,17 @@ export default {
 
   mounted() {
     const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
-    const NAVBAR_VERTICAL_PADDING = parseInt(css(this.$el, 'paddingLeft')) + parseInt(css(this.$el, 'paddingRight'));
+    const NAVBAR_VERTICAL_PADDING =
+      parseInt(css(this.$el, 'paddingLeft')) +
+      parseInt(css(this.$el, 'paddingRight'));
     const handleLinksWrapWidth = () => {
       if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
         this.linksWrapMaxWidth = null;
       } else {
-        this.linksWrapMaxWidth = this.$el.offsetWidth - NAVBAR_VERTICAL_PADDING - ((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
+        this.linksWrapMaxWidth =
+          this.$el.offsetWidth -
+          NAVBAR_VERTICAL_PADDING -
+          ((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
       }
     };
     handleLinksWrapWidth();
@@ -48,7 +69,9 @@ export default {
 
   computed: {
     algolia() {
-      return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {};
+      return (
+        this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
+      );
     },
 
     isAlgoliaSearch() {

@@ -5,6 +5,7 @@ module.exports = {
   head,
   themeConfig,
   serviceWorker: true,
+  sidebar: false,
   locales: {
     '/': {
       lang: 'en-US',
