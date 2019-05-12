@@ -1,8 +1,10 @@
-const en = require('./config/locales/en');
-const pt = require('./config/locales/pt');
+const themeConfig = require('./config/themeConfig');
 const head = require('./config/head');
 
 module.exports = {
+  head,
+  themeConfig,
+  serviceWorker: true,
   locales: {
     '/': {
       lang: 'en-US',
@@ -15,32 +17,14 @@ module.exports = {
       description: 'Dâmocles Gil Marçal, Desenvolvedor Front-End',
     },
   },
-  themeConfig: {
-    locales: {
-      '/': en,
-      '/pt/': pt,
-    },
-    head,
-    serviceWorker: true,
-    ga: 'UA-76830249-1',
-    logo: '/damoclesgil_logo.svg',
-    repo: 'damoclesgil',
-    blackWhite: true,
-    serviceWorker: {
-      updatePopup: {
-        message: 'New content 🎉🎉',
-        buttonText: 'Update',
-      },
-    },
-  },
-  markdown: {
-    anchor: {
-      permalink: false,
-      permalinkBefore: false,
-      permalinkSymbol: '',
-    },
-  },
-  shouldPrefetch: function() {
-    return false;
-  },
+  // markdown: {
+  //   anchor: {
+  //     permalink: false,
+  //     permalinkBefore: false,
+  //     permalinkSymbol: '',
+  //   },
+  // },
+  // shouldPrefetch: function() {
+  //   return false;
+  // },
 };

@@ -3,7 +3,7 @@
     <article class="flex-1 mx-auto leading-normal container">
       <h2>{{$page.frontmatter.title}}</h2>
       <label class="text-grey-dark">
-        <span>{{$page.readingTime.text}}</span> •
+        <!-- <span>{{$page.readingTime.text}}</span> • -->
         <span>{{$page.frontmatter.date}}</span>
       </label>
     </article>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'Layout'
+  name: 'PostLayout'
 };
 </script>
 
