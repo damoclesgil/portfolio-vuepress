@@ -121,11 +121,11 @@ export default {
 }
 
 .vue, .vuepress {
-  background: lighten(#3eaf7c, 30%);
+  background: lighten(#3eaf7c, 30%) !important;
 }
 
 .javascript {
-  background: lighten(#f1e05a, 30%);
+  background: lighten(#f1e05a, 30%) !important;
 }
 
 .electron {
@@ -153,7 +153,7 @@ export default {
 }
 
 .laravel {
-  background: lighten(#e34c26, 30%);
+  background: lighten(#e34c26, 30%) !important;
 }
 
 .html {

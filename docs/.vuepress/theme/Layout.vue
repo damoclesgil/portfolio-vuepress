@@ -1,20 +1,22 @@
 <template>
-  <div class="layout-main" :class="{ 'layout-main__nm--opened': nmOpened, 'layout-main__negative': negative }" @touchstart="onTouchStart" @touchend="onTouchEnd">
+  <div class="theme-container" :class="[pageClasses, {'layout-main__nm--opened': nmOpened, 'layout-main__negative': negative }]" @touchstart="onTouchStart" @touchend="onTouchEnd">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
 
-    <!-- <div class="sidebar-mask" @click="toggleSidebar(false)"></div> -->
-    <!-- 
+    <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
+
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
       <slot name="sidebar-top" slot="top"/>
       <slot name="sidebar-bottom" slot="bottom"/>
-    </Sidebar>-->
+    </Sidebar>
 
     <transition-group name="fade" @after-leave="afterLeave">
       <template>
         <component :is="$page.frontmatter.layout" :key="$page.key"/>
       </template>
     </transition-group>
+
     <BlackWhite v-if="$site.themeConfig.blackWhite" class="header-top__toggle"/>
+
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
 
     <div class="footer">{{ $t('footer') }}</div>
@@ -203,7 +205,7 @@ $transitionDelay = 400ms;
 }
 
 .layout-main__negative, .layout-main__negative :not(.no_bw):not([class*=switch-bw]):not([class*=hamburguer__]):not([class*=language-]):not(code):not(.token) {
-  background-color: #000;
+  background-color: #24292e;
   color: #ccc;
   box-shadow: none;
   fill: #fff;

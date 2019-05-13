@@ -5,7 +5,7 @@ module.exports = {
   head,
   themeConfig,
   serviceWorker: true,
-  sidebar: false,
+  // sidebar: true,
   locales: {
     "/": {
       lang: "pt-br",
