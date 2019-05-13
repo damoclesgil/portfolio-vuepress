@@ -1,19 +1,18 @@
-const en = require('./locales/en');
-const pt = require('./locales/pt');
+const en = require("./locales/en");
+const pt = require("./locales/pt-br");
 module.exports = {
   locales: {
-    '/': en,
-    '/pt/': pt,
+    "/": pt,
+    "/en/": en
   },
-  logo: '/damoclesgil_logo.svg',
+  logo: "/damoclesgil_logo.svg",
   blackWhite: true,
   serviceWorker: {
     updatePopup: {
-      message: 'New content 🎉🎉',
-      buttonText: 'Update',
-    },
+      message: "New content 🎉🎉",
+      buttonText: "Update"
+    }
   },
-  ga: 'UA-76830249-1',
-  repo: 'damoclesgil',
-  lazyLoad: {},
+  ga: "UA-76830249-1",
+  repo: "damoclesgil"
 };

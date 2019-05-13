@@ -1,5 +1,5 @@
-const themeConfig = require('./config/themeConfig');
-const head = require('./config/head');
+const themeConfig = require("./config/themeConfig");
+const head = require("./config/head");
 
 module.exports = {
   head,
@@ -7,17 +7,17 @@ module.exports = {
   serviceWorker: true,
   sidebar: false,
   locales: {
-    '/': {
-      lang: 'en-US',
-      title: 'Dâmocles Gil',
-      description: 'Dâmocles Gil Marçal, Front-End Developer',
+    "/": {
+      lang: "pt-br",
+      title: "Dâmocles Gil Marçal - Desenvolvedor Front End",
+      description: "Um portfólio de um desenvolvedor Front End, fã de VUE, Javascript e novas tecnologias. Atualmente trabalhando na Daxplace."
     },
-    '/pt/': {
-      lang: 'pt-BR',
-      title: 'Dâmocles Gil',
-      description: 'Dâmocles Gil Marçal, Desenvolvedor Front-End',
-    },
-  },
+    "/en/": {
+      lang: "en",
+      title: "Dâmocles Gil Marçal - Front End Developer",
+      description: "Um portfólio de um desenvolvedor Front End, fã de VUE, Javascript e novas tecnologias. Atualmente trabalhando na Daxplace."
+    }
+  }
   // markdown: {
   //   anchor: {
   //     permalink: false,

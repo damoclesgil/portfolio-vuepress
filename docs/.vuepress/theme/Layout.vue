@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="layout-main"
-    :class="{ 'layout-main__nm--opened': nmOpened, 'layout-main__negative': negative }"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-  >
+  <div class="layout-main" :class="{ 'layout-main__nm--opened': nmOpened, 'layout-main__negative': negative }" @touchstart="onTouchStart" @touchend="onTouchEnd">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
 
     <!-- <div class="sidebar-mask" @click="toggleSidebar(false)"></div> -->
@@ -52,8 +47,7 @@ export default {
     About,
     Blog,
     PostLayout,
-    BlackWhite: () =>
-      import(/* webpackChunkName = BlackWhite */ '@theme/components/BlackWhite')
+    BlackWhite: () => import(/* webpackChunkName = BlackWhite */ '@theme/components/BlackWhite')
   },
 
   data() {
@@ -72,32 +66,16 @@ export default {
       if (frontmatter.navbar === false || themeConfig.navbar === false) {
         return false;
       }
-      return (
-        this.$title ||
-        themeConfig.logo ||
-        themeConfig.repo ||
-        themeConfig.nav ||
-        this.$themeLocaleConfig.nav
-      );
+      return this.$title || themeConfig.logo || themeConfig.repo || themeConfig.nav || this.$themeLocaleConfig.nav;
     },
 
     shouldShowSidebar() {
       const { frontmatter } = this.$page;
-      return (
-        !frontmatter.layout &&
-        !frontmatter.home &&
-        frontmatter.sidebar !== false &&
-        this.sidebarItems.length
-      );
+      return !frontmatter.layout && !frontmatter.home && frontmatter.sidebar !== false && this.sidebarItems.length;
     },
 
     sidebarItems() {
-      return resolveSidebarItems(
-        this.$page,
-        this.$route,
-        this.$site,
-        this.$localePath
-      );
+      return resolveSidebarItems(this.$page, this.$route, this.$site, this.$localePath);
     },
 
     pageClasses() {
@@ -224,11 +202,11 @@ $transitionDelay = 400ms;
   right: 35px;
 }
 
-.layout-main__negative {
-  background-color: #000 !important;
-  color: #ccc !important;
-  box-shadow: none !important;
-  fill: #000 !important;
+.layout-main__negative, .layout-main__negative :not(.no_bw):not([class*=switch-bw]):not([class*=hamburguer__]):not([class*=language-]):not(code):not(.token) {
+  background-color: #000;
+  color: #ccc;
+  box-shadow: none;
+  fill: #fff;
 }
-</style>
+</style>  
 

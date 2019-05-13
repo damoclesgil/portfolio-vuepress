@@ -1,48 +1,22 @@
 <template>
-  <div
-    class="dropdown-wrapper"
-    :class="{ open }"
-  >
-    <a
-      class="dropdown-title"
-      @click="toggle"
-    >
+  <div class="dropdown-wrapper" :class="{ open }">
+    <a class="dropdown-title" @click="toggle">
       <span class="title">{{ item.text }}</span>
-      <span
-        class="arrow"
-        :class="open ? 'down' : 'right'"
-      ></span>
+      <span class="arrow" :class="open ? 'down' : 'right'"></span>
     </a>
 
     <DropdownTransition>
-      <ul
-        class="nav-dropdown"
-        v-show="open"
-      >
-        <li
-          class="dropdown-item"
-          :key="subItem.link || index"
-          v-for="(subItem, index) in item.items"
-        >
+      <ul class="nav-dropdown" v-show="open">
+        <li class="dropdown-item" :key="subItem.link || index" v-for="(subItem, index) in item.items">
           <h4 v-if="subItem.type === 'links'">{{ subItem.text }}</h4>
 
-          <ul
-            class="dropdown-subitem-wrapper"
-            v-if="subItem.type === 'links'"
-          >
-            <li
-              class="dropdown-subitem"
-              :key="childSubItem.link"
-              v-for="childSubItem in subItem.items"
-            >
+          <ul class="dropdown-subitem-wrapper" v-if="subItem.type === 'links'">
+            <li class="dropdown-subitem" :key="childSubItem.link" v-for="childSubItem in subItem.items">
               <NavLink :item="childSubItem"/>
             </li>
           </ul>
 
-          <NavLink
-            v-else
-            :item="subItem"
-          />
+          <NavLink v-else :item="subItem"/>
         </li>
       </ul>
     </DropdownTransition>
@@ -50,8 +24,8 @@
 </template>
 
 <script>
-import NavLink from "./NavLink.vue";
-import DropdownTransition from "./DropdownTransition.vue";
+import NavLink from './NavLink.vue';
+import DropdownTransition from './DropdownTransition.vue';
 
 export default {
   components: { NavLink, DropdownTransition },
@@ -77,138 +51,166 @@ export default {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl'
+@import './styles/config.styl';
 
-.dropdown-wrapper
-  cursor: pointer
+.dropdown-wrapper {
+  cursor: pointer;
 
-  .dropdown-title
-    display: block
+  .dropdown-title {
+    display: block;
 
-    &:hover
-      border-color: transparent
+    &:hover {
+      border-color: transparent;
+    }
 
-    .arrow
-      vertical-align: middle
-      margin-top: -1px
-      margin-left: 0.4rem
+    .arrow {
+      vertical-align: middle;
+      margin-top: -1px;
+      margin-left: 0.4rem;
+    }
+  }
 
-  .nav-dropdown
-    .dropdown-item
-      color: inherit
-      line-height: 1.7rem
+  .nav-dropdown {
+    .dropdown-item {
+      color: inherit;
+      line-height: 1.7rem;
 
-      h4
-        margin: 0.45rem 0 0
-        border-top: 1px solid #eee
-        padding: 0.45rem 1.5rem 0 1.25rem
+      h4 {
+        margin: 0.45rem 0 0;
+        border-top: 1px solid #eee;
+        padding: 0.45rem 1.5rem 0 1.25rem;
+      }
 
-      .dropdown-subitem-wrapper
-        padding: 0
-        list-style: none
+      .dropdown-subitem-wrapper {
+        padding: 0;
+        list-style: none;
 
-        .dropdown-subitem
-          font-size: 0.9em
+        .dropdown-subitem {
+          font-size: 0.9em;
+        }
+      }
 
-      a
-        display: block
-        line-height: 1.7rem
-        position: relative
-        border-bottom: none
-        font-weight: 400
-        margin-bottom: 0
-        padding: 0 1.5rem 0 1.25rem
+      a {
+        display: block;
+        line-height: 1.7rem;
+        position: relative;
+        border-bottom: none;
+        font-weight: 400;
+        margin-bottom: 0;
+        padding: 0 1.5rem 0 1.25rem;
 
-        &:hover
-          color: $accentColor
+        &:hover {
+          color: $accentColor;
+        }
 
-        &.router-link-active
-          color: $accentColor
+        &.router-link-active {
+          color: $accentColor;
+        }
+      }
 
-      &:first-child h4
-        margin-top: 0
-        padding-top: 0
-        border-top: 0
+      &:first-child h4 {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+      }
+    }
+  }
+}
 
-@media (max-width: $MQMobile)
-  .dropdown-wrapper
-    &.open .dropdown-title
-      margin-bottom: 0.5rem
+@media (max-width: $MQMobile) {
+  .dropdown-wrapper {
+    &.open .dropdown-title {
+      margin-bottom: 0.5rem;
+    }
 
-    .nav-dropdown
-      transition: height 0.1s ease-out
+    .nav-dropdown {
+      transition: height 0.1s ease-out;
 
       // overflow: hidden
-      .dropdown-item
-        h4
-          border-top: 0
-          margin-top: 0
-          padding-top: 0
+      .dropdown-item {
+        h4 {
+          border-top: 0;
+          margin-top: 0;
+          padding-top: 0;
+        }
 
-        h4, & > a
-          font-size: 15px
-          line-height: 2rem
+        h4, & > a {
+          font-size: 15px;
+          line-height: 2rem;
+        }
 
-        .dropdown-subitem
-          font-size: 14px
-          padding-left: 1rem
+        .dropdown-subitem {
+          font-size: 14px;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}
 
-@media (min-width: $MQMobile)
-  .dropdown-wrapper
-    height: 1.8rem
+@media (min-width: $MQMobile) {
+  .dropdown-wrapper {
+    height: 1.8rem;
 
-    &:hover .nav-dropdown
+    &:hover .nav-dropdown {
       // override the inline style.
-      display: block !important
+      display: block !important;
 
-      &:after
-        background-color: #FFFFFF
-        content: '\00a0'
-        display: block
-        height: 14px
-        position: absolute
-        top: 11px
-        transform: rotate(119deg) skew(-35deg)
-        width: 18px
-        top: -3px
-        right: 25px
-        border-radius: 0px 0px 0px 5px
-        box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.03)
+      // &:after {
+      // background-color: #FFFFFF;
+      // content: '\00a0';
+      // display: block;
+      // height: 14px;
+      // position: absolute;
+      // top: 11px;
+      // transform: rotate(119deg) skew(-35deg);
+      // width: 18px;
+      // top: -3px;
+      // right: 25px;
+      // border-radius: 0px 0px 0px 5px;
+      // box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.03);
+      // }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 15px;
+        top: -15px;
+      }
+    }
 
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        right: 0
-        height: 15px
-        top: -15px
-
-    .dropdown-title .arrow
+    .dropdown-title .arrow {
       // make the arrow always down at desktop
-      border-left: 4px solid transparent
-      border-right: 4px solid transparent
-      border-top: 6px solid $arrowBgColor
-      border-bottom: 0
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 6px solid $arrowBgColor;
+      border-bottom: 0;
+    }
 
-    .nav-dropdown
-      display: none
+    .nav-dropdown {
+      display: none;
       // Avoid height shaked by clicking
-      height: auto !important
-      box-sizing: border-box
-      max-height: calc(100vh - 2.7rem)
-      position: absolute
-      top: 110%
-      right: 0
-      background-color: #fff
-      padding: 0.6rem 0
+      height: auto !important;
+      box-sizing: border-box;
+      max-height: calc(100vh - 2.7rem);
+      position: absolute;
+      top: 110%;
+      right: 0;
+      background-color: #fff;
+      padding: 0.6rem 0;
       // border 1px solid #ddd
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1)
-      border-bottom-color: #ccc
-      text-align: left
-      border-radius: 0.25rem
-      white-space: nowrap
-      margin: 0
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      border-bottom-color: #ccc;
+      text-align: left;
+      border-radius: 0.25rem;
+      white-space: nowrap;
+      margin: 0;
 
-      li
-        list-style-type: none
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
 </style>

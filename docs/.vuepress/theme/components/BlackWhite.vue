@@ -1,18 +1,10 @@
 <template>
   <div class="switch-bw">
-    <span class="switch-bw__text" :class="{ 'switch-bw__text--turnon': toggle }">{{ getText }}</span>
+    <span class="switch-bw__text" :class="{ 'switch-bw__text--turnon': toggle }"></span>
     <label for="switch-bw" class="switch-bw__label">
-      <input
-        type="checkbox"
-        id="switch-bw"
-        name="switch-bw"
-        class="switch-bw__input"
-        @change="handle"
-        :checked="toggle"
-        aria-labelledby="switch-bw-text"
-      >
+      <input type="checkbox" id="switch-bw" name="switch-bw" class="switch-bw__input" @change="handle" :checked="toggle" aria-labelledby="switch-bw-text">
       <span class="switch-bw__ball"></span>
-      <span id="switch-bw-text" hidden>switch to black or white</span>
+      <span id="switch-bw-text" hidden></span>
     </label>
   </div>
 </template>
@@ -28,9 +20,7 @@ export default {
   },
   computed: {
     getText() {
-      return !this.toggle
-        ? this.$t('turnon_night_mode')
-        : this.$t('turnon_night_mode_ptBR');
+      return !this.toggle;
     }
   },
   mounted() {
@@ -84,7 +74,7 @@ export default {
     left: -3px;
     width: 24px;
     height: 24px;
-    background: $primaryColor;
+    background: #000;
     border-radius: 50%;
     transition: left 0.5s;
   }
