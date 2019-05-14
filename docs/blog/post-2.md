@@ -2,9 +2,9 @@
 lang: pt-br
 title: "Test 2: translation"
 layout: PostLayout
-image: http://localhost:8080/images/realtrade/realtrade_01.jpg
+image: /images/realtrade/realtrade_01.jpg
 excerpt: oklgoerktgoerktokeroerotwe terkweor
-date: 2019-02-12
+date: "2019-02-12"
 tags:
   - vuejs
   - vuepress

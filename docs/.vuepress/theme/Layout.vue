@@ -230,12 +230,5 @@ $transitionDelay = 400ms;
   bottom: 25px;
   right: 35px;
 }
-
-.layout-main__negative, .layout-main__negative :not(.no_bw):not([class*=switch-bw]):not([class*=hamburguer__]):not([class*=language-]):not(code):not(.token) {
-  background-color: #24292e;
-  color: #ccc;
-  box-shadow: none;
-  fill: #fff;
-}
 </style>  
 
