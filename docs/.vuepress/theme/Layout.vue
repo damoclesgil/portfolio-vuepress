@@ -9,7 +9,7 @@
       <slot name="sidebar-bottom" slot="bottom"/>
     </Sidebar>
 
-    <transition-group name="fade" @after-leave="afterLeave">
+    <transition-group name="home" @after-leave="afterLeave">
       <template>
         <component :is="$page.frontmatter.layout" :key="$page.key"/>
       </template>
@@ -178,6 +178,7 @@ export default {
 <style lang="stylus">
 @import './styles/theme.styl';
 
+$transition = 10vw;
 $transitionSpeed = 400ms;
 $transitionDelay = 400ms;
 
@@ -199,6 +200,29 @@ $transitionDelay = 400ms;
 
 .fade-leave-to {
   opacity: 0;
+}
+
+.home-enter-active {
+  transition: all $transitionSpeed $transitionDelay;
+}
+
+.home-leave-active {
+  transition: all $transitionSpeed ease-in;
+}
+
+.home-enter {
+  opacity: 0;
+  transform: translateX((- $transition));
+}
+
+.home-enter-to, .interview-leave {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.home-leave-to {
+  opacity: 0;
+  transform: translateX($transition);
 }
 
 .header-top__toggle {

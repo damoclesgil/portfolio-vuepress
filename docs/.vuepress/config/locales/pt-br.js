@@ -6,7 +6,7 @@ module.exports = {
     { text: "Blog", link: "/blog/" },
     {
       text: "Projetos",
-      items: [{ text: "Realtrade", link: "work/realtrade/" }]
+      items: [{ text: "Realtrade", link: "/work/realtrade/" }, { text: "Premyu", link: "/work/premyu" }]
     }
   ]
 };
