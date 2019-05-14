@@ -1,30 +1,12 @@
 <template>
   <div class="container-layout">
-    <ul class="flex-1 container mx-auto leading-normal">
-      <router-link
-        :to="post.path"
-        v-for="post in posts"
-        :key="post.frontmatter.date"
-        class="max-w-md w-full lg:flex mb-8 block mx-auto no-underline shadow-lg"
-      >
-        <div
-          class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-          style="background-image: url('https://source.unsplash.com/user/iamrbn/daily')"
-          title="Random Photo"
-        ></div>
-        <div
-          class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
-        >
-          <div class="mb-8">
-            <div class="text-black font-bold text-xl mb-2">{{post.title}}</div>
-            <p class="text-grey-darker text-base" v-html="post.excerpt"></p>
-          </div>
-          <div class="flex items-center">
-            <div class="text-sm">
-              <p class="text-grey-dark">{{post.frontmatter.date}}</p>
-            </div>
-          </div>
-        </div>
+    <ul class="flex">
+      <router-link :to="post.path" v-for="post in posts" :key="post.frontmatter.date">
+        <img class="img-post" :src="`${post.frontmatter.image}`" title="Random Photo">
+        <h3>{{post.frontmatter.excerpt}}</h3>
+        <h3>{{post.title}}</h3>
+        <p>{{post.frontmatter.date}}</p>
+        <p v-html="post.excerpt"></p>
       </router-link>
     </ul>
   </div>
@@ -33,16 +15,48 @@
 <script>
 export default {
   name: 'Blog',
+  // computed: {
+  //   tag() {
+  //     return this.$route.query.tag;
+  //   },
+
+  //   postsByLang() {
+  //     return [
+  //       ...this.$posts.filter(post => {
+  //         return post.lang === this.$localeConfig.lang;
+  //       })
+  //     ];
+  //   },
+  //   filterPosts() {
+  //     if (this.tag) {
+  //       return this.postsByLang.filter(post => {
+  //         if (!post.tags.length) return;
+  //         return post.tags.includes(this.tag);
+  //       });
+  //     }
+  //     return this.postsByLang;
+  //   }
+  // },
+  // methods: {
+  //   getPosts(start, end) {
+  //     const p = [...this.filterPosts];
+  //     return p.splice(start, end || p.length);
+  //   }
+  // }
   computed: {
     posts() {
-      return this.$site.pages
-        .filter(x => x.path.startsWith('/blog/') && !x.frontmatter.blog_index)
-        .sort(
-          (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
-        );
+      return this.$site.pages.filter(x => x.path.startsWith('/blog/') && !x.frontmatter.blog_index);
+      // .filter(x => x.path.startsWith('/blog/') && !x.frontmatter.blog_index)
+      // .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
     }
   }
 };
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+.img-post {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+</style>

@@ -13,6 +13,5 @@ module.exports = {
       buttonText: "Update"
     }
   },
-  ga: "UA-76830249-1",
   repo: "damoclesgil"
 };

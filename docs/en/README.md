@@ -1,5 +1,6 @@
 ---
-# home: true
+home: true
+title: ""
 layout: Home
 heroText: Hello, I'm Dâmocles, a front-end developer. Check out some of my projects below.
 ---

@@ -1,12 +1,13 @@
 <template>
-  <div class="flex flex-col h-full">
-    <article class="flex-1 mx-auto leading-normal container">
+  <div class="container-layout">
+    <article>
       <h2>{{$page.frontmatter.title}}</h2>
       <label class="text-grey-dark">
-        <!-- <span>{{$page.readingTime.text}}</span> • -->
         <span>{{$page.frontmatter.date}}</span>
       </label>
     </article>
+
+    <Content></Content>
   </div>
 </template>
 

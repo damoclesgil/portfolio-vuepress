@@ -19,7 +19,7 @@
 
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
 
-    <div class="footer">{{ $t('footer') }}</div>
+    <Footer/>
   </div>
 </template>
 
@@ -34,6 +34,7 @@ import About from './layouts/About.vue';
 import Page from './layouts/Page.vue';
 import Sidebar from './Sidebar.vue';
 import SWUpdatePopup from './SWUpdatePopup.vue';
+import Footer from '@theme/components/Footer.vue';
 import { resolveSidebarItems } from './util';
 import Work from './layouts/Work.vue';
 import EventBus from '@theme/plugins/EventBus';
@@ -49,6 +50,7 @@ export default {
     About,
     Blog,
     PostLayout,
+    Footer,
     BlackWhite: () => import(/* webpackChunkName = BlackWhite */ '@theme/components/BlackWhite')
   },
 
@@ -172,9 +174,10 @@ export default {
 };
 </script>
 
-<style src="./styles/theme.styl" lang="stylus"></style>
 
 <style lang="stylus">
+@import './styles/theme.styl';
+
 $transitionSpeed = 400ms;
 $transitionDelay = 400ms;
 

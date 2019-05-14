@@ -1,4 +1,4 @@
 module.exports = {
   // General
-  footer: "ENGLISH FOOTER"
+  footer: "© 2019 — Web app designed and coded by Dâmocles Gil Marçal using VuePress 💚"
 };

@@ -1,0 +1,21 @@
+Humans.txt is a legal initiative of (humanstxt.org), to talk a little about who is behind the web-based applications, the team involved and the stack used.
+Remembering, we are human beings and not machines.
+
+/* PROJECT */
+  Site name: Dâmocles Gil Marçal
+  Site URL: https://damoclesgil.com/
+  Last update: 2019-05-15 00:00:00
+  Language: English/Portugues/Spanish
+  Twitter: 
+  Contact: 
+  Built with: Vue.js (Vuepress), HTML5, CSS3, Accessibility techniques, PWA e SEO
+  Software: Visual Code Studio (VS Code)
+
+/* AUTHOR */
+	Name:        Dâmocles Gil Marçal
+	Nickname:    damoclesgil
+	Title:       Dâmocles Gil Marçal - Desenvolvedor Front-End
+	Location:    Goiânia. Goiás, Brazil
+	Site:        https://damoclesgil.com/
+  Twitter:     https://twitter.com/damoclesgil/
+  Github:      https://github.com/damoclesgil/

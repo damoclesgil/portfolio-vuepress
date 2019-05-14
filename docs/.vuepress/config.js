@@ -6,6 +6,15 @@ module.exports = {
   themeConfig,
   serviceWorker: true,
   // sidebar: true,
+  ga: "UA-76830249-1",
+  // plugins: [
+  //   [
+  //     "@vuepress/google-analytics",
+  //     {
+  //       ga: "UA-76830249-1"
+  //     }
+  //   ]
+  // ],
   locales: {
     "/": {
       lang: "pt-br",

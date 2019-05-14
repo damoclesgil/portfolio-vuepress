@@ -1,15 +1,257 @@
 ---
-title: "Test 1: common examples"
+title: My First post
 layout: PostLayout
+lang: pt-br
 date: 2019-02-11
+image: http://localhost:8080/images/realtrade/realtrade_01.jpg
+author: damoclesgil
+description: Descrição da postagem
+excerpt: Versão pequena do titulo do post.
+categories:
+  - vuejs
+tags:
+  - vuejs
+  - vuepress
+  - static site
+created_at: 2018-08-22 09:00
+updated_at: 2018-08-22 09:00
+meta: # If you have cover image
+  - property: og:image
+    content: /images/posts/my-first-post.png
+  - name: twitter:image
+    content: /images/posts/my-first-post.png
 ---
 
-layout based on Lorem Ipsum Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes). Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit is the first known version ("Neither is there anyone who loves grief itself since it is grief and thus wants to obtain it"). It was found by Richard McClintock, a philologist, director of publications at Hampden-Sydney College in Virginia; he searched for citings of consectetur in classical Latin literature, a term of remarkably low frequency in that literary corpus.
+**Advertisement :)**
 
-<!-- more -->
+- **[pica](https://nodeca.github.io/pica/demo/)** - high quality and fast image
+  resize in browser.
+- **[babelfish](https://github.com/nodeca/babelfish/)** - developer friendly
+  i18n with plurals support and easy syntax.
 
-Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline is taken for type specimens: Quo usque tandem abutere, Catilina, patientia nostra? Quam diu etiam furor iste tuus nos eludet? (How long, O Catiline, will you abuse our patience? And for how long will that madness of yours mock us?)
+You will like those projects!
 
-Cicero's version of Liber Primus (first Book), sections 1.10.32–3 (fragments included in most Lorem Ipsum variants in red):
+---
 
-Cicero writing letters; from an early edition by Hieronymus Scotus Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet, consectetur, adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
+# h1 Heading 8-)
+
+## h2 Heading
+
+### h3 Heading
+
+#### h4 Heading
+
+##### h5 Heading
+
+###### h6 Heading
+
+## Horizontal Rules
+
+---
+
+---
+
+---
+
+## video
+
+### Using lazy-load using IntersectionObserver
+
+<lazy-load tag="iframe" :data="{ src: 'https://www.youtube.com/watch?v=lIv1ItUzktc' }" />
+
+## Typographic replacements
+
+Enable typographer option to see result.
+
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+
+test.. test... test..... test?..... test!....
+
+!!!!!! ???? ,, -- ---
+
+"Smartypants, double quotes" and 'single quotes'
+
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+_This is italic text_
+
+_This is italic text_
+
+~~Strikethrough~~
+
+## Blockquotes
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+## Lists
+
+Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    * Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+1) You can use sequential numbers...
+1) ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+1. bar
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+```js
+var foo = function(bar) {
+  return bar++;
+};
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+Right aligned columns
+
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+## Images
+
+### default rendering
+
+![Minion](https://octodex.github.com/images/minion.png)
+
+### Using lazy-load using IntersectionObserver
+
+<lazy-load tag="img" :data="{ src: 'https://octodex.github.com/images/stormtroopocat.jpg', alt: 'The Stormtroopocat' }" />
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of
+[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+> see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+
+- 19^th^
+- H~2~O
+
+### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
+
+++Inserted text++
+
+### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
+
+==Marked text==
+
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+
+Footnote 1 link[^first].
+
+Footnote 2 link[^second].
+
+Inline footnote^[Text of inline footnote] definition.
+
+Duplicated footnote reference[^second].
+
+[^first]: Footnote **can have markup**
+
+  and multiple paragraphs.
+
+[^second]: Footnote text.
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+: Definition 1
+with lazy continuation.
+
+Term 2 with _inline markup_
+
+: Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+_Compact style:_
+
+Term 1
+~ Definition 1
+
+Term 2
+~ Definition 2a
+~ Definition 2b
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+\*[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning
+_here be dragons_
+:::
