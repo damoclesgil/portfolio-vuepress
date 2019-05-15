@@ -2,7 +2,7 @@
 title: My First post
 layout: PostLayout
 lang: pt-br
-date: "2019-02-11"
+date: "15 de maio de 2019"
 image: /images/realtrade/realtrade_01.jpg
 author: damoclesgil
 description: Descrição da postagem

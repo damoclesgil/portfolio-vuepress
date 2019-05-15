@@ -4,7 +4,7 @@ title: "Test 2: translation"
 layout: PostLayout
 image: /images/realtrade/realtrade_01.jpg
 excerpt: oklgoerktgoerktokeroerotwe terkweor
-date: "2019-02-12"
+date: "15 de maio de 2019"
 tags:
   - vuejs
   - vuepress

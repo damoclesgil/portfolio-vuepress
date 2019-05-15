@@ -1,20 +1,18 @@
 $dark_bgPrimary = #2F2F2F
 $dark_bgSecondary = #2b2b2b
-$dark_borderColor = #212121
-$dark_borderColorLight = white
-$dark_textColor = #FFFFFF
-$dark_transition = all .2 ease
 
-.layout-main__negative{
+$dark_textColor = #FFFFFF
+
+.layout-main__negative, .layout-main__negative :not(.no_bw):not([class*=switch-bw]):not([class*=hamburguer__]):not([class*=language-]):not(code):not(.token) {
   background-color: $dark_bgPrimary;
   color: $dark_textColor;
+  fill: $dark_textColor;
+  box-shadow: none;
 }
 .layout-main__negative{
-    .navbar, .navbar .links, .navbar .logo path, .search-box input, .dropdown-wrapper .nav-dropdown, .front-teaser, .ribbon{
-  background-color: $dark_bgSecondary;
-  color: $dark_textColor;
-  fill: $dark_textColor;
-}
+  .navbar, .navbar .links, .navbar .logo path, .search-box input, .dropdown-wrapper .nav-dropdown, .front-teaser, .front-teaser *, .ribbon{
+  background-color: $dark_bgSecondary !important;
+  }
 }
 
 

@@ -80,4 +80,15 @@ export default {
     transform: translateY(-2px);
   }
 }
+
+@media only screen and (max-width: 72em) {
+  .front-flex {
+    grid-template-columns: 1fr;
+  }
+
+  .front-teaser {
+    flex-basis: 100% !important;
+    margin: 1.1em 0.7em;
+  }
+}
 </style>
