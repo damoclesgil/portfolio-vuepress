@@ -18,3 +18,11 @@ meta:
 ---
 
 ## [Realtrade](/work/realtrade/) - <span>A Realtrade é uma empresa global que fornece tecnologia e inteligência de ponta.</span>
+
+## [Premyu](/work/premyu/) - <span>Desenvolvido para atender à crescente demanda do mercado por parte de empresas que buscam formas mais eficazes de marketing e promoção de projetos, produtos, serviços e campanhas de ICO's.</span>
+
+## [Trei.no](/work/treino/) - <span>Trei.no é um aplicativo de treino para academias e personais, disponível para qualquer dispositivo. </span>
+
+## [Actuar Web](/work/actuarweb/) - <span> Sistema De Gestão Para Academias, Studio e Box.</span>
+
+## [Conexao](/work/conexao/) - <span>A Conexão Propaganda é uma agência multilateral que combina diferentes técnicas de comunicação com soluções inovadoras.</span>
