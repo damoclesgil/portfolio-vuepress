@@ -1,13 +1,9 @@
 <template>
   <div class="container-layout">
     <article>
-      <h2>{{$page.frontmatter.title}}</h2>
-      <label class="text-grey-dark">
-        <span>{{$page.frontmatter.date}}</span>
-      </label>
+      <Content></Content>
+      <h5 class="t_right">Publicado em: {{$page.frontmatter.date}}</h5>
     </article>
-
-    <Content></Content>
   </div>
 </template>
 
@@ -17,4 +13,9 @@ export default {
 };
 </script>
 
-<style lang="stylus"></style>
+<style lang="stylus">
+.t_right {
+  text-align: right;
+  padding-right: 1rem;
+}
+</style>

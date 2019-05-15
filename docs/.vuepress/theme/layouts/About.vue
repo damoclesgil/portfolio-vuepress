@@ -1,10 +1,7 @@
 <template>
   <div class="container-layout">
-    <img class="avatar" :src="data.image" alt>
-    <h1>{{ data.title }}</h1>
-    <p>{{ data.text }}</p>
-    <p>Habilidades: HTML, CSS, JS, VUE e TDD(in progress)</p>
-    <p>Contato</p>
+    <img class="avatar" :src="data.avatar" :alt="data.altImg">
+    <Content></Content>
   </div>
 </template>
 
@@ -20,10 +17,11 @@ export default {
 
 <style lang="stylus">
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
   display: block;
-  margin: 1rem auto;
+  margin: 3rem auto auto auto;
+  border-radius: 50%;
 }
 </style>

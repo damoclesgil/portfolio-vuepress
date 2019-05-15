@@ -6,7 +6,7 @@
       <div class="info">
         <div class="tech">
           <li v-for="item in data.tech">
-            {{ item }}
+            {{ item == 'csharp' ? 'C#' : item }}
             <div :class="item"></div>
           </li>
         </div>
@@ -124,6 +124,26 @@ export default {
   background: lighten(#3eaf7c, 30%) !important;
 }
 
+.css {
+  background-color: #0070b7;
+}
+
+.csharp {
+  background-color: #953dac;
+}
+
+.angular {
+  background-color: #dd0031;
+}
+
+.codeigniter {
+  background-color: #ee4323;
+}
+
+.php {
+  background-color: #777bb3;
+}
+
 .javascript {
   background: lighten(#f1e05a, 30%) !important;
 }
@@ -153,7 +173,7 @@ export default {
 }
 
 .laravel {
-  background: lighten(#e34c26, 30%) !important;
+  background: #fb503b !important;
 }
 
 .html {

@@ -2,11 +2,17 @@ module.exports = {
   footer: "english",
   nav: [
     { text: "Home", link: "/en/" },
-    { text: "About", link: "/en/about/" },
     { text: "Blog", link: "/en/blog/" },
     {
-      text: "Projects",
-      items: [{ text: "Realtrade", link: "/en/work/realtrade/" }]
-    }
+      text: "Proejcts",
+      items: [
+        { text: "Realtrade", link: "/work/realtrade/" },
+        { text: "Premyu", link: "/work/premyu/" },
+        { text: "Trei.no", link: "/work/treino/" },
+        { text: "Actuar", link: "/work/actuarweb/" },
+        { text: "Conexao", link: "/work/conexao/" }
+      ]
+    },
+    { text: "About", link: "/en/about/" }
   ]
 };
