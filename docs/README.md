@@ -1,7 +1,7 @@
 ---
 home: true
 layout: Home
-heroText: Olá, Eu sou Dâmocles, desenvolvedor front-end. Veja meus projetos e saiba mais sobre mim logo abaixo.
+heroText: Olá! eu sou Dâmocles, desenvolvedor front-end e UX Designer.
 title: Dâmocles Gil Marçal - Desenvolvedor Front End
 description: Um website de um desenvolvedor Front End que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
 meta:

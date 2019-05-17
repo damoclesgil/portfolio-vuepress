@@ -13,5 +13,6 @@ module.exports = {
       buttonText: "Update"
     }
   },
+  disqus: "projetojekyll",
   repo: "damoclesgil"
 };

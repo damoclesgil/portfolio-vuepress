@@ -3,7 +3,9 @@
     <div class="hero">
       <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
 
-      <h1>{{ data.heroText }}</h1>
+      <!-- <h1>{{ data.heroText }}</h1> -->
+
+      <vue-typer class="title-hero" :text="data.heroText"></vue-typer>
 
       <!-- <p class="description">
         {{ data.tagline || $description || 'Welcome to your VuePress site' }}
@@ -27,9 +29,10 @@
 
 <script>
 import NavLink from './../NavLink.vue';
+import { VueTyper } from 'vue-typer';
 
 export default {
-  components: { NavLink },
+  components: { NavLink, VueTyper },
 
   computed: {
     data() {
@@ -39,10 +42,10 @@ export default {
     actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText
+        text: this.data.actionText,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -61,8 +64,10 @@ export default {
     justify-content: center;
     align-items: center;
 
-    h1 {
+    span {
       font-size: 2.4rem;
+      color: #2c3e50;
+      font-family: 'Silka';
       line-height: 1.45;
     }
   }
@@ -79,7 +84,7 @@ export default {
     font-weight: 600;
   }
 
-  span {
+  .content span {
     font-size: 1.3rem;
   }
 
