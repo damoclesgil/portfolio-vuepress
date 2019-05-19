@@ -1,18 +1,17 @@
 <template>
   <div class="home">
     <div class="hero">
-      <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">
+      <!-- <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero"> -->
 
       <!-- <h1>{{ data.heroText }}</h1> -->
+      <div class="title-hero">
+        <span>{{data.txtBegin}}</span>
+        <vue-typer :text="data.heroText"></vue-typer>
+      </div>
 
-      <vue-typer class="title-hero" :text="data.heroText"></vue-typer>
-
-      <!-- <p class="description">
-        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-      </p>-->
-
-      <p class="action" v-if="data.actionText && data.actionLink">
-        <NavLink class="action-button" :item="actionLink"/>
+      <p class="action">
+        <router-link class="action-button" :to="data.aboutLink">About</router-link>
+        <a :href="data.cvLink" target="_blank">Curriculum</a>
       </p>
     </div>
 
@@ -29,11 +28,11 @@
 
 <script>
 import NavLink from './../NavLink.vue';
-import { VueTyper } from 'vue-typer';
 
 export default {
-  components: { NavLink, VueTyper },
-
+  components: {
+    NavLink
+  },
   computed: {
     data() {
       return this.$page.frontmatter;
@@ -42,10 +41,10 @@ export default {
     actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText,
+        text: this.data.actionText
       };
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -62,13 +61,15 @@ export default {
     height: 87vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 
-    span {
+    .title-hero {
       font-size: 2.4rem;
       color: #2c3e50;
       font-family: 'Silka';
       line-height: 1.45;
+      display: block;
     }
   }
 
