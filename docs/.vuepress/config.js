@@ -7,10 +7,7 @@ module.exports = {
   head,
   themeConfig,
   serviceWorker: true,
-  // sidebar: true,
   ga: "UA-76830249-1",
-  // plugins: ["~/plugins/disqus"],
-  // plugins: [["@vuepress/google-analytics", {ga: "UA-76830249-1"}]],
   locales: {
     "/": {
       lang: "pt-br",

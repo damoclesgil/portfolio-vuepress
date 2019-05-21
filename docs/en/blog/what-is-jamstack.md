@@ -1,6 +1,6 @@
 ---
 id: 01
-title: O que é JAMstack?
+title: What is JAMstack?
 layout: PostLayout
 lang: pt-br
 date: "15 de maio de 2019"
@@ -15,7 +15,7 @@ meta: # If you have cover image
     content: /images/blog/JAMstack.png
 ---
 
-# O que é JAMstack?
+# What is JAMstack?
 
 > _Arquitetura de desenvolvimento web moderna baseada em JavaScript do lado do cliente, APIs reutilizáveis e marcação pré-construída._ [jamstack.org](https://jamstack.org/)
 

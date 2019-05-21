@@ -9,8 +9,8 @@
       </div>
 
       <p class="action">
-        <router-link class="action-button" :to="data.aboutLink">About</router-link>
-        <a :href="data.cvLink" target="_blank">Curriculum</a>
+        <router-link class="action-button" :to="data.aboutLink">{{data.txtAbout}}</router-link>
+        <a :href="data.cvLink" target="_blank">{{data.txtCV}}</a>
       </p>
     </div>
 

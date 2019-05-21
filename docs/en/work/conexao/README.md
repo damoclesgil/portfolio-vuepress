@@ -3,7 +3,7 @@ layout: work
 url: "https://conexaopro.com.br/"
 title: "Conexão Propaganda"
 tech: ["html", "css", "javascript", "php", "codeigniter"]
-description: "A Conexão Propaganda é uma agência multilateral que combina diferentes técnicas de comunicação com soluções inovadoras."
+description: "The Conexão Propaganda is an agency multilateral which combine different technics of comunication with innovative solutions."
 header: "/images/work/conexao/homepage.png"
 meta: # If you have cover image
   - property: og:image

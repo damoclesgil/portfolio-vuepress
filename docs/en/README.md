@@ -1,12 +1,13 @@
 ---
 home: true
 layout: Home
-aboutLink: /about/
+aboutLink: /en/about/
+txtAbout: Aboute Me
 cvLink: "https://drive.google.com/open?id=1F_Y6erNDygM-JN08IT3DlDkmmCBHG_wJ"
-heroImage: /images/hero.jpg
-txtBegin: Hi! I'm Dâmocles Gil front-end developer e UX Designer.
-title: Dâmocles Gil Marçal - Desenvolvedor Front End
-description: Um website de um desenvolvedor Front End que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
+txtCV: Curriculum
+txtBegin: Hi! I'm Dâmocles Gil front-end developer and UX Designer.
+title: Dâmocles Gil Marçal - Front End Developer
+description: A website from Front End developer que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
 meta:
   - property: og:url
     content: "https://damoclesgil.netlify.com/"
@@ -20,12 +21,12 @@ meta:
     content: Um website de um desenvolvedor Front End que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
 ---
 
-## [Realtrade](/work/realtrade/) - <span>A Realtrade é uma empresa global que fornece tecnologia e inteligência de ponta.</span>
+## [Realtrade](/work/realtrade/) - <span>The Realtrade is a global company that provides state-of-the-art technology and intelligence.</span>
 
-## [Premyu](/work/premyu/) - <span>Desenvolvido para atender à crescente demanda do mercado por parte de empresas que buscam formas mais eficazes de marketing e promoção de projetos, produtos, serviços e campanhas de ICO's.</span>
+## [Premyu](/work/premyu/) - <span>Developed to meet growing market demand from companies that seek more effective ways of marketing and promoting projects, products, services and ICO campaigns.</span>
 
-## [Trei.no](/work/treino/) - <span>Trei.no é um aplicativo de treino para academias e personais, disponível para qualquer dispositivo. </span>
+## [Trei.no](/work/treino/) - <span>Trei.no is an app of training for academies and personal trainers, available for any device. </span>
 
-## [Actuar Web](/work/actuarweb/) - <span> Sistema De Gestão Para Academias, Studio e Box.</span>
+## [Actuar Web](/work/actuarweb/) - <span> Management System for Academies, Studio and Box.</span>
 
-## [Conexao](/work/conexao/) - <span>A Conexão Propaganda é uma agência multilateral que combina diferentes técnicas de comunicação com soluções inovadoras.</span>
+## [Conexao](/work/conexao/) - <span> The Conexão Propaganda is an agency multilateral which combine different technics of comunication with innovative solutions.</span>

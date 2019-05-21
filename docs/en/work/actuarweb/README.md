@@ -3,7 +3,7 @@ layout: work
 url: "https://actuar.com"
 title: "Actuar Web"
 tech: ["angular", "javascript", "csharp"]
-description: "Software para Academia com Gerenciamento Completo, Total Controle Financeiro, Sistema de Avaliação Física Com Envio dos Resultados, Criação e Emissão de Treinos Automáticos, Controle de Acesso por Catraca Biométrica, Sistema de Gestão Online para Academia, Automação de SMS e E-mail Marketing."
+description: "Management System for Academies, Studio and Box."
 header: "/images/work/actuar/dashboard.png"
 meta: # If you have cover image
   - property: og:image
@@ -12,8 +12,8 @@ meta: # If you have cover image
     content: /images/work/actuar/dashboard.png
 ---
 
-O Software para Academia Actuar foi criado para gerenciar academias e estúdios. Oferece uma maneira fácil e integrada de controlar gestão, campanhas de marketing, emissão de treino, avaliação física e acesso
+Actuar Academy Software is designed to manage academies and studios. Provides an easy and integrated way to manage management, marketing campaigns, training, physical assessment and access
 
 ![Actuar Dashboard](/images/work/actuar/login.png)
 
-O mais completo sistema de gestão de academias. Desenvolvemos a ferramenta certa para a gestão do seu negócio. Crie estratégias de crescimento e ajuste onde precisa ser melhorado. Tenha o controle de seu negócio e gerenciá-lo será incrivelmente simples!
+The most complete system of management of academies. We have developed the right tool for managing your business. Create growth and adjustment strategies where you need to improve. Take control of your business and manage it will be incredibly simple!

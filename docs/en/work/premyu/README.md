@@ -3,7 +3,7 @@ layout: work
 url: "https://premyu.com"
 title: "Premyu"
 tech: ["vue", "javascript", "laravel"]
-description: "Desenvolvido para atender à crescente demanda do mercado por parte de empresas que buscam formas mais eficazes de marketing e promoção de projetos, produtos, serviços e campanhas de ICO's"
+description: "Developed to meet growing market demand from companies that seek more effective ways of marketing and promoting projects, products, services and ICO campaigns."
 header: "/images/work/premyu/dashboard.png"
 meta: # If you have cover image
   - property: og:image
