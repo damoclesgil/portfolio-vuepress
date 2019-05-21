@@ -7,10 +7,9 @@ altImg: Dâmocles Gil Marçal
 # Sobre Mim
 
 Meu nome é Dâmocles Gil Marçal e atualmente sou Frontend Developer na [Daxplace](https://daxplace.com). Trabalho com desenvolvimento web desde de 2012, quando realizei um curso de web design em um escola técnica chamada [Mc-Tech](http://mctechgoiania.com.br/).
+Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/).
 
-Possuo uma graduação em Gestão de Tecnologia da Informação através da Faculdade de Tecnologia SENAC - Goiás.
-
-Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/). Eu amo trabalhar em equipe e sou bem comunicativo.
+E como desenvolvedor, tenho interesse em escabilidade de aplicações, infraestrutra e melhores práticas de desenvolvimento. Possuo sólidos connhecimentos em programação funcional, javascript e css. Eu amo trabalhar em equipe e sou bem comunicativo.
 
 ## Habilidades
 
@@ -51,6 +50,12 @@ Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://co
 - [Animação de um Fogete com SVG](https://codepen.io/damoclesgil/full/eGWrdq/)
 - [Animação com SVG Fogete andando em uma linha](https://codepen.io/damoclesgil/full/Nadazg/)
 - [Links Favoritos](https://github.com/damoclesgil/favorites-links)
+
+## Formação
+
+**Web Designer - [MCTech](http://mctechgoiania.com.br/)** - / Setembro 2014 - Junho 2016
+
+**Gestão da Tecnologia da Informação - [Faculdade de Tecnologia SENAC Goiás](https://www.go.senac.br/portal/)** - / Janeiro 2015 - Dezembro 2017
 
 ## Contato
 
