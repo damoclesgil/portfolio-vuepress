@@ -11,9 +11,6 @@
 <script>
 export default {
   name: 'PostLayout',
-  components: {
-    VueDisqus: () => import(/* webpackChunkName = "vue-disqus" */ 'vue-disqus/dist/vue-disqus.vue'),
-  },
 };
 </script>
 
@@ -22,7 +19,8 @@ export default {
   text-align: right;
   padding-right: 1rem;
 }
-.mt-30{
+
+.mt-30 {
   margin-top: 30px;
 }
 </style>

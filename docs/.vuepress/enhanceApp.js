@@ -1,8 +1,8 @@
-import Translation from '@theme/plugins/Translation';
-import VueTyperPlugin from 'vue-typer';
+import Translation from "@theme/plugins/Translation";
+import VueDisqus from "vue-disqus";
 
-export default ({ Vue, siteData }) => {
+export default ({ Vue, options, router, siteData }) => {
   Vue.prototype.$themeConfig = siteData.themeConfig;
   Vue.use(Translation);
-  Vue.use(VueTyperPlugin);
+  Vue.use(VueDisqus);
 };

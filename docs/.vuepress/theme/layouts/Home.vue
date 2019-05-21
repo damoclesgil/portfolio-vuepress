@@ -6,7 +6,6 @@
       <!-- <h1>{{ data.heroText }}</h1> -->
       <div class="title-hero">
         <span>{{data.txtBegin}}</span>
-        <vue-typer :text="data.heroText"></vue-typer>
       </div>
 
       <p class="action">
@@ -31,8 +30,9 @@ import NavLink from './../NavLink.vue';
 
 export default {
   components: {
-    NavLink
+    NavLink,
   },
+
   computed: {
     data() {
       return this.$page.frontmatter;
@@ -41,10 +41,10 @@ export default {
     actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText
+        text: this.data.actionText,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
