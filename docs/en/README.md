@@ -21,12 +21,12 @@ meta:
     content: Um website de um desenvolvedor Front End que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
 ---
 
-## [Realtrade](/work/realtrade/) - <span>The Realtrade is a global company that provides state-of-the-art technology and intelligence.</span>
+## [Realtrade](/en/work/realtrade/) - <span>The Realtrade is a global company that provides state-of-the-art technology and intelligence.</span>
 
-## [Premyu](/work/premyu/) - <span>Developed to meet growing market demand from companies that seek more effective ways of marketing and promoting projects, products, services and ICO campaigns.</span>
+## [Premyu](/en/work/premyu/) - <span>Developed to meet growing market demand from companies that seek more effective ways of marketing and promoting projects, products, services and ICO campaigns.</span>
 
-## [Trei.no](/work/treino/) - <span>Trei.no is an app of training for academies and personal trainers, available for any device. </span>
+## [Trei.no](/en/work/treino/) - <span>Trei.no is an app of training for academies and personal trainers, available for any device. </span>
 
-## [Actuar Web](/work/actuarweb/) - <span> Management System for Academies, Studio and Box.</span>
+## [Actuar Web](/en/work/actuarweb/) - <span> Management System for Academies, Studio and Box.</span>
 
-## [Conexao](/work/conexao/) - <span> The Conexão Propaganda is an agency multilateral which combine different technics of comunication with innovative solutions.</span>
+## [Conexao](/en/work/conexao/) - <span> The Conexão Propaganda is an agency multilateral which combine different technics of comunication with innovative solutions.</span>

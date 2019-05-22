@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import NavLink from './../NavLink.vue';
+import NavLink from '@theme/components/NavLink.vue';
 
 export default {
   components: {
-    NavLink,
+    NavLink
   },
 
   computed: {
@@ -41,10 +41,10 @@ export default {
     actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText,
+        text: this.data.actionText
       };
-    },
-  },
+    }
+  }
 };
 </script>
 

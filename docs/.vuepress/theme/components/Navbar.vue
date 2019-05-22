@@ -42,12 +42,17 @@ export default {
 
   mounted() {
     const MOBILE_DESKTOP_BREAKPOINT = 719; // refer to config.styl
-    const NAVBAR_VERTICAL_PADDING = parseInt(css(this.$el, 'paddingLeft')) + parseInt(css(this.$el, 'paddingRight'));
+    const NAVBAR_VERTICAL_PADDING =
+      parseInt(css(this.$el, 'paddingLeft')) +
+      parseInt(css(this.$el, 'paddingRight'));
     const handleLinksWrapWidth = () => {
       if (document.documentElement.clientWidth < MOBILE_DESKTOP_BREAKPOINT) {
         this.linksWrapMaxWidth = null;
       } else {
-        this.linksWrapMaxWidth = this.$el.offsetWidth - NAVBAR_VERTICAL_PADDING - ((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
+        this.linksWrapMaxWidth =
+          this.$el.offsetWidth -
+          NAVBAR_VERTICAL_PADDING -
+          ((this.$refs.siteName && this.$refs.siteName.offsetWidth) || 0);
       }
     };
     handleLinksWrapWidth();
@@ -56,7 +61,9 @@ export default {
 
   computed: {
     algolia() {
-      return this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {};
+      return (
+        this.$themeLocaleConfig.algolia || this.$site.themeConfig.algolia || {}
+      );
     },
 
     isAlgoliaSearch() {
@@ -74,7 +81,7 @@ function css(el, property) {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl';
+@import '~@theme/styles/config.styl';
 
 $navbar-vertical-padding = 0.7rem;
 $navbar-horizontal-padding = 1.5rem;

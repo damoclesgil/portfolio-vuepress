@@ -7,11 +7,19 @@
 
     <DropdownTransition>
       <ul class="nav-dropdown" v-show="open">
-        <li class="dropdown-item" :key="subItem.link || index" v-for="(subItem, index) in item.items">
+        <li
+          class="dropdown-item"
+          :key="subItem.link || index"
+          v-for="(subItem, index) in item.items"
+        >
           <h4 v-if="subItem.type === 'links'">{{ subItem.text }}</h4>
 
           <ul class="dropdown-subitem-wrapper" v-if="subItem.type === 'links'">
-            <li class="dropdown-subitem" :key="childSubItem.link" v-for="childSubItem in subItem.items">
+            <li
+              class="dropdown-subitem"
+              :key="childSubItem.link"
+              v-for="childSubItem in subItem.items"
+            >
               <NavLink :item="childSubItem"/>
             </li>
           </ul>
@@ -51,7 +59,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@import './styles/config.styl';
+@import '~@theme/styles/config.styl';
 
 .dropdown-wrapper {
   cursor: pointer;

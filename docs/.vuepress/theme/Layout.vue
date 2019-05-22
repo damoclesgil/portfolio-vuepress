@@ -26,14 +26,14 @@
 <script>
 import Vue from 'vue';
 import nprogress from 'nprogress';
-import Navbar from './Navbar.vue';
+import Navbar from '@theme/components/Navbar.vue';
 import Home from './layouts/Home.vue';
 import Blog from './layouts/Blog.vue';
 import PostLayout from './layouts/PostLayout.vue';
 import About from './layouts/About.vue';
 import Page from './layouts/Page.vue';
-import Sidebar from './Sidebar.vue';
-import SWUpdatePopup from './SWUpdatePopup.vue';
+import Sidebar from '@theme/components/Sidebar.vue';
+import SWUpdatePopup from '@theme/components/SWUpdatePopup.vue';
 import Footer from '@theme/components/Footer.vue';
 import { resolveSidebarItems } from './util';
 import Work from './layouts/Work.vue';
