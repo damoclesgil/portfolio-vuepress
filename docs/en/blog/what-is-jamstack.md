@@ -2,7 +2,6 @@
 id: 01
 title: What is JAMstack?
 layout: PostLayout
-lang: pt-br
 date: "15 de maio de 2019"
 author: damoclesgil
 description: Descubra o que significa JAMstack e as vantagens deste conjunto de tecnologias
@@ -17,17 +16,19 @@ meta: # If you have cover image
 
 # What is JAMstack?
 
-> _Arquitetura de desenvolvimento web moderna baseada em JavaScript do lado do cliente, APIs reutilizáveis e marcação pré-construída._ [jamstack.org](https://jamstack.org/)
+> _Modern web development architecture with client-side JavaScript, reusable APIs and pre-built communication._ [jamstack.org](https://jamstack.org/)
 
-JAMstack é uma nova maneira de criar sites e aplicativos que ofereçam melhor desempenho, maior segurança, menos custo de escala e uma melhor experiência de desenvolvimento.
+JAMstack is a new way to make websites and applications that deliver better performance, greater safety, less cost of scale and better development experience.
 
 ![JAMstack](/images/blog/JAMstack.png)
 
-## O que ganho com isso?
+## What do I get out of it?
 
 Com o JAMstack é exibido o HTML gerado, sem a necessidade de renderizar informações de um servidor. Com isso o tempo de carregamento é mais rápido e diminui os riscos com segurança, ou seja, você consegue ter um site mais rápido, com melhor experiência do usuário, classficação no Google e mais tráfego.
 
-Para quem é desenvolvedor é melhor ainda, pois é muito mais simples, o html é gerado através de escritas em markdown.
+With JAMstack, generated HTML is displayed, without the need to render information from a server. As a result, charging time is faster and risk-free, so you can have a faster site with better user experience, Google ranking and more traffic.
+
+For those who are developer is even better, as it is much simpler, the html is generated through writing in markdown.
 
 ## Desvantagens
 

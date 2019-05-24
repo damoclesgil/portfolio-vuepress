@@ -23,6 +23,9 @@ export default {
   name: 'Blog',
   computed: {
     posts() {
+      if (this.$page.frontmatter.lang === 'en') {
+        return this.$site.pages.filter(x => x.path.startsWith('/en/blog/') && !x.frontmatter.blog_index);
+      }
       return this.$site.pages.filter(x => x.path.startsWith('/blog/') && !x.frontmatter.blog_index);
     },
   },

@@ -2,7 +2,6 @@
 id: 01
 title: O que é JAMstack?
 layout: PostLayout
-lang: pt-br
 date: "15 de maio de 2019"
 author: damoclesgil
 description: Descubra o que significa JAMstack e as vantagens deste conjunto de tecnologias
