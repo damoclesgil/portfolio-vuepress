@@ -10,7 +10,7 @@
 
       <p class="action">
         <router-link class="action-button" :to="data.aboutLink">{{data.txtAbout}}</router-link>
-        <a :href="data.cvLink" target="_blank">{{data.txtCV}}</a>
+        <a :href="data.cvLink" class="action-button" target="_blank">{{data.txtCV}}</a>
       </p>
     </div>
 
@@ -30,7 +30,7 @@ import NavLink from '@theme/components/NavLink.vue';
 
 export default {
   components: {
-    NavLink
+    NavLink,
   },
 
   computed: {
@@ -41,10 +41,10 @@ export default {
     actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText
+        text: this.data.actionText,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -89,39 +89,28 @@ export default {
     font-size: 1.3rem;
   }
 
-  // .hero
-  // text-align: center
+  .action-button {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 0.4rem 1.4rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    border: 1px solid $accentColor;
+    color: $textColor;
+    background-color: transparent;
+  }
 
-  // img
-  // max-height: 280px
-  // display: block
-  // margin: 3rem auto 1.5rem
+  .action-button:nth-child(1) {
+    margin-right: 20px;
+  }
 
-  // h1
-  // font-size: 3rem
+  .action-button:hover {
+    background-color: lighten($accentColor, 90%);
+    border: 1px solid lighten($textColor, 90%);
+    color: $accentColor;
+  }
 
-  // h1, .description, .action
-  // margin: 1.8rem auto
-
-  // .description
-  // max-width: 35rem
-  // font-size: 1.6rem
-  // line-height: 1.3
-  // color: lighten($textColor, 40%)
-
-  // .action-button
-  // display: inline-block
-  // font-size: 1.2rem
-  // color: #fff
-  // background-color: $accentColor
-  // padding: 0.8rem 1.6rem
-  // border-radius: 4px
-  // transition: background-color 0.1s ease
-  // box-sizing: border-box
-  // border-bottom: 1px solid darken($accentColor, 10%)
-
-  // &:hover
-  // background-color: lighten($accentColor, 10%)
   .features {
     border-top: 1px solid $borderColor;
     padding: 1.2rem 0;

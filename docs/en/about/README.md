@@ -6,13 +6,11 @@ altImg: Dâmocles Gil Marçal
 
 # About Me
 
-Meu nome é Dâmocles Gil Marçal e atualmente sou Frontend Developer na [Daxplace](https://daxplace.com). Trabalho com desenvolvimento web desde de 2012, quando realizei um curso de web design em um escola técnica chamada [Mc-Tech](http://mctechgoiania.com.br/).
+My name is Damocles Gil Marçal and I'm currently Frontend Developer [Daxplace](https://daxplace.com). I work with web development since 2012, when I take a webdesign course at a technical school called [Mc-Tech](http://mctechgoiania.com.br/). I've been through companies like [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) and [Pão de Açúcar](https://www.paodeacucar.com/).
 
-Possuo uma graduação em Gestão de Tecnologia da Informação através da Faculdade de Tecnologia SENAC - Goiás.
+And as a developer, I'm interested in listening to applications, infrastructures, and best development practices. They have solid knowledge in functional programming, javascript and css. I love working as a team and I am very communicative.
 
-Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/). Eu amo trabalhar em equipe e sou bem comunicativo.
-
-## Habilidades
+## Skills
 
 - Design (Adobe Illustrator, Adobe Photoshop, Adobe XD e CorelDRAW)
 - HTML5
@@ -27,7 +25,7 @@ Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://co
 - Wordpress
 - SCRUM
 
-## Projetos
+## Projects
 
 - [Premyu](https://premyu.com/)
 - [Realtrade Club](http://realtradeclub.com/dev)
@@ -52,7 +50,7 @@ Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://co
 - [Animação com SVG Fogete andando em uma linha](https://codepen.io/damoclesgil/full/Nadazg/)
 - [Links Favoritos](https://github.com/damoclesgil/favorites-links)
 
-## Contato
+## Contact
 
 - [Github](https://github.com/damoclesgil/)
 - [Linkedin](https://www.linkedin.com/in/damoclesgil/)
@@ -60,4 +58,4 @@ Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://co
 - [Facebook](https://www.facebook.com/damoclesgil)
 - [Instagram](https://www.instagram.com/damoclesgil/)
 
-Se desejar entrar em contato é só mandar um email para [damoclesgil@gmail.com](mailto:damoclesgil@gmail.com).
+If you want to get in touch just send an email to: [damoclesgil@gmail.com](mailto:damoclesgil@gmail.com).

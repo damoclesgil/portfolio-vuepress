@@ -24,8 +24,8 @@ export default {
   computed: {
     posts() {
       return this.$site.pages.filter(x => x.path.startsWith('/blog/') && !x.frontmatter.blog_index);
-    }
-  }
+    },
+  },
 };
 </script>
 

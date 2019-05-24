@@ -6,7 +6,7 @@ altImg: Dâmocles Gil Marçal
 
 # Sobre Mim
 
-Meu nome é Dâmocles Gil Marçal e atualmente sou Frontend Developer e bobo master na [Daxplace](https://daxplace.com). Trabalho com desenvolvimento web desde de 2012, quando realizei um curso de web design em um escola técnica chamada [Mc-Tech](http://mctechgoiania.com.br/).
+Meu nome é Dâmocles Gil Marçal e atualmente sou Frontend Developer [Daxplace](https://daxplace.com). Trabalho com desenvolvimento web desde de 2012, quando realizei um curso de web design em um escola técnica chamada [Mc-Tech](http://mctechgoiania.com.br/).
 Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/).
 
 E como desenvolvedor, tenho interesse em escabilidade de aplicações, infraestrutra e melhores práticas de desenvolvimento. Possuo sólidos connhecimentos em programação funcional, javascript e css. Eu amo trabalhar em equipe e sou bem comunicativo.
