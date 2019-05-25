@@ -33,12 +33,12 @@ export default {
   computed: {
     data() {
       return this.$page.frontmatter;
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .work {
   padding: 3.6rem 2rem 0;
   max-width: 800px;
@@ -125,23 +125,23 @@ export default {
 }
 
 .css {
-  background-color: #0070b7;
+  background-color: #0070b7 !important;
 }
 
 .csharp {
-  background-color: #953dac;
+  background-color: #953dac !important;
 }
 
 .angular {
-  background-color: #dd0031;
+  background-color: #dd0031 !important;
 }
 
 .codeigniter {
-  background-color: #ee4323;
+  background-color: #ee4323 !important;
 }
 
 .php {
-  background-color: #777bb3;
+  background-color: #777bb3 !important;
 }
 
 .javascript {
@@ -177,6 +177,6 @@ export default {
 }
 
 .html {
-  background: lighten(#e34c26, 30%);
+  background: lighten(#e34c26, 30%) !important;
 }
 </style>

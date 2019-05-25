@@ -30,14 +30,14 @@ module.exports = {
         }
       }
     };
-  },
-  markdown: {
-    anchor: {
-      permalink: false,
-      permalinkBefore: false,
-      permalinkSymbol: ""
-    }
   }
+  // markdown: {
+  //   anchor: {
+  //     permalink: false,
+  //     permalinkBefore: false,
+  //     permalinkSymbol: ""
+  //   }
+  // }
   // shouldPrefetch: function() {
   //   return false;
   // },

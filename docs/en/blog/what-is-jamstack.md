@@ -2,10 +2,10 @@
 id: 01
 title: What is JAMstack?
 layout: PostLayout
-date: "15 de maio de 2019"
+date: "May 15, 2019"
 author: damoclesgil
-description: Descubra o que significa JAMstack e as vantagens deste conjunto de tecnologias
-excerpt: Descubra o que significa JAMstack e as vantagens deste conjunto de tecnologias
+description: Find out what does JAMstack mean, and the advantages of this set of technologies
+excerpt: Find out what does JAMstack mean, and the advantages of this set of technologies
 category: js
 meta: # If you have cover image
   - property: og:image
@@ -30,24 +30,24 @@ With JAMstack, generated HTML is displayed, without the need to render informati
 
 For those who are developer is even better, as it is much simpler, the html is generated through writing in markdown.
 
-## Desvantagens
+## Downsides
 
-E os usuários não técnicos? Produtores de conteúdo que estão acostumados com os editores do estilo do WordPress e que não estão familiarizados com markdown e GitHub?
+What about non-technical users? What content producers are with WordPress style editors who are not familiar with markdown and GitHub?
 
-Este é realmente um problema e algumas soluções estão começando a surgir. Ferramentas como [Prose.io](https://prose.io), integram o GitHub para fornecer uma UI mais amigável para os autores não técnicos.
+This is really a problem and some solutions are starting to emerge. Tools like [Prose.io](https://prose.io), integrate GitHub to provide a more user friendly UI for non-technical authors.
 
-## Algumas tecnologias que podem ser usadas para criar aplicativos JAMstack
+## Some technologies that can be used to create JAMstack applications
 
 - Gatsby
 - Next.js
 - Nuxt
 - Hugo
-- Vuepress e muito mais
+- Vuepress e much more
 
-## O que pode ser usado pelo JAMstack?
+## What can be used by JAMstack?
 
-Muitas aplicações podem ser feitos com JAMstack, e as possibilidades são infinitas, variando de simples blogs a sites de comércio eletrônico a Web Apps mais complexos.
+Many applications can be made with JAMstack, and the possibilities are endless, ranging from simple blogs to ecommerce websites to more complex Web Apps.
 
-O Meu blog foi feito completamente usando JAMstack. Todo o HTML é gerado no momento da implementação e não há mais nada acontecendo.
+My blog was completely made using JAMstack. All HTML is generated at the time of implementation and nothing else is happening.
 
 ---
