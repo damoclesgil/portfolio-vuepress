@@ -1,30 +1,32 @@
 ---
 layout: about
-avatar: /images/damocles.png
+avatar: /images/damocles.jpg
 altImg: Dâmocles Gil Marçal
 ---
 
 # Sobre Mim
 
-Meu nome é Dâmocles Gil Marçal e atualmente sou Frontend Developer [Daxplace](https://daxplace.com). Trabalho com desenvolvimento web desde de 2012, quando realizei um curso de web design em um escola técnica chamada [Mc-Tech](http://mctechgoiania.com.br/).
-Já passei por empresas como [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/).
+Meu nome é Dâmocles Gil Marçal e atualmente sou Frontend Engineer [FolhaWeb](http://folhaweb.online/home.html). Trabalho com desenvolvimento web desde de 2012, quando realizei um curso de web design em um escola técnica chamada [Mc-Tech](http://mctechgoiania.com.br/).
+Já passei por empresas como [Realtrade](http://realtradeclub.com/), [NectarCRM](https://nectarcrm.com.br/), [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/).
 
-E como desenvolvedor, tenho interesse em escabilidade de aplicações, infraestrutra e melhores práticas de desenvolvimento. Possuo sólidos connhecimentos em programação funcional, javascript e css. Eu amo trabalhar em equipe e sou bem comunicativo.
+E como desenvolvedor, tenho interesse em escabilidade de aplicações, performance, infraestrutra e melhores práticas de desenvolvimento. Possuo sólidos connhecimentos em programação funcional, javascript e css. Eu amo trabalhar em equipe e sou bem comunicativo.
 
 ## Habilidades
 
-- Design (Adobe Illustrator, Adobe Photoshop, Adobe XD e CorelDRAW)
 - HTML5
 - CSS3
 - SVG
 - Automatizadores de Tarefas (Gulp, Webpack)
+- Gerenciador de Dependências (NPM, YARN)
 - JavaScript
-- VueJS
+- VueJs
+- Graphql
 - Git
 - MySQL
 - SEO
 - Wordpress
 - SCRUM
+- Design (Figma e Adobe XD)
 
 ## Projetos
 

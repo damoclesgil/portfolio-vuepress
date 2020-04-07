@@ -5,32 +5,37 @@
 
       <!-- <h1>{{ data.heroText }}</h1> -->
       <div class="title-hero">
-        <span>{{data.txtBegin}}</span>
+        <span>{{ data.txtBegin }}</span>
       </div>
 
       <p class="action">
-        <router-link class="action-button" :to="data.aboutLink">{{data.txtAbout}}</router-link>
-        <a :href="data.cvLink" class="action-button" target="_blank">{{data.txtCV}}</a>
+        <router-link class="action-button" :to="data.aboutLink">{{
+          data.txtAbout
+        }}</router-link>
       </p>
     </div>
 
     <div class="features" v-if="data.features && data.features.length">
-      <div class="feature" v-for="(feature, index) in data.features" :key="index">
+      <div
+        class="feature"
+        v-for="(feature, index) in data.features"
+        :key="index"
+      >
         <h2>{{ feature.title }}</h2>
         <p>{{ feature.details }}</p>
       </div>
     </div>
 
-    <Content custom/>
+    <Content custom />
   </div>
 </template>
 
 <script>
-import NavLink from '@theme/components/NavLink.vue';
+import NavLink from "@theme/components/NavLink.vue";
 
 export default {
   components: {
-    NavLink,
+    NavLink
   },
 
   computed: {
@@ -41,10 +46,10 @@ export default {
     actionLink() {
       return {
         link: this.data.actionLink,
-        text: this.data.actionText,
+        text: this.data.actionText
       };
-    },
-  },
+    }
+  }
 };
 </script>
 

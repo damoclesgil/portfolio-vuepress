@@ -40,7 +40,7 @@ Este é realmente um problema e algumas soluções estão começando a surgir. F
 - Next.js
 - Nuxt
 - Hugo
-- Vuepress e muito mais
+- Vuepress que é a que eu estou usando 💚. e muito mais
 
 ## O que pode ser usado pelo JAMstack?
 

@@ -1,6 +1,11 @@
 <template>
   <div class="container-layout">
-    <img class="avatar" :src="data.avatar" :alt="data.altImg">
+    <img
+      class="avatar"
+      :src="data.avatar"
+      :alt="data.altImg"
+      :title="data.altImg"
+    />
     <Content></Content>
   </div>
 </template>

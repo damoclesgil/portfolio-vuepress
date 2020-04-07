@@ -1,5 +1,5 @@
 {
-  "name": "damoclesgil-website",
+  "name": "portfolio-vuepress",
   "version": "1.0.0",
   "description": "Portfólio com Vuepress - Dâmocles Gil Marçal",
   "main": "index.js",
@@ -7,8 +7,12 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "vuepress",
+    "desenvolvedor front-end"
+  ],
+  "author": "damoclesgil",
   "license": "ISC",
   "dependencies": {
     "vue-disqus": "^3.0.5",

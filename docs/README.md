@@ -3,9 +3,7 @@ home: true
 layout: Home
 aboutLink: /about/
 txtAbout: Sobre Mim
-cvLink: "https://drive.google.com/open?id=1F_Y6erNDygM-JN08IT3DlDkmmCBHG_wJ"
-txtCV: Currículo
-txtBegin: Olá, Eu sou Dâmocles, desenvolvedor front-end e UX Designer.
+txtBegin: Olá, Eu sou Dâmocles, desenvolvedor front-end.
 title: Dâmocles Gil Marçal - Desenvolvedor Front End
 description: Um website de um desenvolvedor Front End que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
 meta:
@@ -20,6 +18,8 @@ meta:
   - name: twitter:description
     content: Um website de um desenvolvedor Front End que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
 ---
+
+## [Nectar CRM](/work/nectarcrm/) - <span>A Nectar CRM é startup que desenvolve sistemas e aplicativos voltados para auxiliar na gestão do relacionamento com o cliente.</span>
 
 ## [Realtrade](/work/realtrade/) - <span>A Realtrade é uma empresa global que fornece tecnologia e inteligência de ponta.</span>
 

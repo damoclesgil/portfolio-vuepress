@@ -1,12 +1,9 @@
 {
   "files.exclude": {
-    // "docs/en": true,
-    "desktop.ini": true,
-    "outros": true,
+    // "desktop.ini": true,
+    // "outros": true,
     "package-lock.json": true,
-    "README.md": true
+    "node_modules": true
+    // "README.md": true
   }
-  //   "search.exclude": {
-  //     "docs/en": true
-  //   }
 }
