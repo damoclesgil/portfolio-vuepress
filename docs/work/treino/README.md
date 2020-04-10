@@ -12,6 +12,10 @@ meta: # If you have cover image
     content: /images/work/treino/treino-metatag.png
 ---
 
+
+<span>Trei.no é um aplicativo de treino para academias e personais, disponível para qualquer dispositivo. </span>
+
+
 - Melhor experiência de treino
 
   Disponível para Android, iOS e pela Web, o trei.no traz ao seu aluno a experiência completa de treinamento, com um treino interativo e dinâmico, tempo de descanso com alerta definido pelo professor. Além disso, dispensa fichas e impressões, tudo digital.

@@ -12,6 +12,9 @@ meta: # If you have cover image
     content: /images/work/realtrade/realtrade_01.jpg
 ---
 
+<span>A Realtrade é uma empresa global que fornece tecnologia e inteligência de ponta.</span>
+
+
 ![Realtrade Dashboard](/images/work/realtrade/realtrade_02.jpg)
 
 ![Realtrade Dashboard](/images/work/realtrade/realtrade_03.jpg)

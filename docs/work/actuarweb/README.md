@@ -12,6 +12,8 @@ meta: # If you have cover image
     content: /images/work/actuar/dashboard.png
 ---
 
+<span> Sistema De Gestão Para Academias, Studio e Box.</span>
+
 O Software para Academia Actuar foi criado para gerenciar academias e estúdios. Oferece uma maneira fácil e integrada de controlar gestão, campanhas de marketing, emissão de treino, avaliação física e acesso
 
 ![Actuar Dashboard](/images/work/actuar/login.png)

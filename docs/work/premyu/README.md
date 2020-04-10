@@ -12,6 +12,9 @@ meta: # If you have cover image
     content: /images/work/premyu/dashboard.png
 ---
 
+
+<span>Desenvolvido para atender à crescente demanda do mercado por parte de empresas que buscam formas mais eficazes de marketing e promoção de projetos, produtos, serviços e campanhas de ICO's.</span>
+
 # Screenshots
 
 ![Premyu](/images/work/premyu/login.png)

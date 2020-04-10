@@ -15,7 +15,7 @@ export default {
   name: 'BlackWhite',
   data() {
     return {
-      toggle: false
+      toggle: true
     };
   },
   computed: {
