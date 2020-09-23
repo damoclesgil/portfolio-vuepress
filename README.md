@@ -1,7 +1,6 @@
 # Meu blogito
 
 ```
-
-npm update vuepress@latest
-
+// Atualizando dependências de forma interativa.
+yarn upgrade-interactive --latest
 ```
