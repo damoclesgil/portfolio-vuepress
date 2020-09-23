@@ -6,6 +6,7 @@ const resolve = pathName => path.join(__dirname, pathName);
 module.exports = {
   head,
   themeConfig,
+  port: '9000',
   serviceWorker: true,
   ga: "UA-76830249-1",
   locales: {
