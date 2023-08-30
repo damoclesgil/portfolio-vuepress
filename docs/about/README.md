@@ -30,10 +30,10 @@ E como desenvolvedor, tenho interesse em escabilidade de aplicações, performan
 
 ## Projetos
 
-- [Premyu](https://premyu.com/)
-- [Realtrade Club](http://realtradeclub.com/dev)
-- [Plaico](https://plaico.com/)
-- [Danwealth](https://danwealth.com/dev/)
+<!-- - [Premyu](https://premyu.com/) -->
+<!-- - [Realtrade Club](http://realtradeclub.com/dev) -->
+<!-- - [Plaico](https://plaico.com/) -->
+<!-- - [Danwealth](https://danwealth.com/dev/) -->
 - [InfoTech Goianesia](https://infotechgoianesia.com.br)
 - [CromaWeb](https://cromaweb.com.br/)
 - [Grupo Gprac](https://grupogprac.com.br/)

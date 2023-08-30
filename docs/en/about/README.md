@@ -27,8 +27,8 @@ And as a developer, I'm interested in listening to applications, infrastructures
 
 ## Projects
 
-- [Premyu](https://premyu.com/)
-- [Realtrade Club](http://realtradeclub.com/dev)
+<!-- - [Premyu](https://premyu.com/) -->
+<!-- - [Realtrade Club](http://realtradeclub.com/dev) -->
 - [Plaico](https://plaico.com/)
 - [Danwealth](https://danwealth.com/dev/)
 - [InfoTech Goianesia](https://infotechgoianesia.com.br)
