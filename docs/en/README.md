@@ -21,9 +21,6 @@ meta:
     content: Um website de um desenvolvedor Front End que aborda sobre desenvolvimento web, focado em Javascript, HTML, Vue.js, estilo de vida e produtividade.
 ---
 
-## [Realtrade](/en/work/realtrade/) - <span>The Realtrade is a global company that provides state-of-the-art technology and intelligence.</span>
-
-## [Premyu](/en/work/premyu/) - <span>Developed to meet growing market demand from companies that seek more effective ways of marketing and promoting projects, products, services and ICO campaigns.</span>
 
 ## [Trei.no](/en/work/treino/) - <span>Trei.no is an app of training for academies and personal trainers, available for any device. </span>
 

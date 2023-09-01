@@ -7,7 +7,7 @@ altImg: Dâmocles Gil Marçal
 # Sobre Mim
 
 Meu nome é Dâmocles Gil Marçal e atualmente sou Frontend Engineer [FolhaWeb](http://folhaweb.online/home.html). Trabalho com desenvolvimento web desde de 2012, quando realizei um curso de web design em um escola técnica chamada [Mc-Tech](http://mctechgoiania.com.br/).
-Já passei por empresas como [Realtrade](http://realtradeclub.com/), [NectarCRM](https://nectarcrm.com.br/), [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/).
+Já passei por empresas como [NectarCRM](https://nectarcrm.com.br/), [Actuar](https://actuar.com), [Conexão](https://conexaopro.com.br/site/), [Sage](https://www.sage.com/pt-br) e [Pão de Açúcar](https://www.paodeacucar.com/).
 
 E como desenvolvedor, tenho interesse em escabilidade de aplicações, performance, infraestrutra e melhores práticas de desenvolvimento. Possuo sólidos connhecimentos em programação funcional, javascript e css. Eu amo trabalhar em equipe e sou bem comunicativo.
 
@@ -30,8 +30,6 @@ E como desenvolvedor, tenho interesse em escabilidade de aplicações, performan
 
 ## Projetos
 
-<!-- - [Premyu](https://premyu.com/) -->
-<!-- - [Realtrade Club](http://realtradeclub.com/dev) -->
 <!-- - [Plaico](https://plaico.com/) -->
 <!-- - [Danwealth](https://danwealth.com/dev/) -->
 - [InfoTech Goianesia](https://infotechgoianesia.com.br)
